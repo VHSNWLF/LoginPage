@@ -316,3 +316,38 @@ Grandes telas: acima 12000px
     }
     
 }
+
+@media screen and (max-width: 600px) {
+    .form-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        margin-top: -5rem;
+    }
+
+    .title2{
+        margin-top: -1rem;
+        text-align: center;
+    }
+    
+    .form-image{
+        display: none;
+    }
+
+    .form-header img{
+        margin-top: 5rem;
+        height: 100px;
+        object-fit: contain;
+        aspect-ratio: 2/1;
+    }
+
+    .bvf{
+        display: block;
+        margin-top: 1rem;
+    }
+}
+

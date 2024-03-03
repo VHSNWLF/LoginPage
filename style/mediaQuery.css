@@ -300,3 +300,19 @@ Grandes telas: acima 12000px
         height: 140px;
     }
 }
+
+@media screen and (max-width: 1017px) {
+    
+    #ip{
+        height: 280px;
+    }
+    
+}
+
+@media screen and (max-width: 839px) {
+    
+    #ip{
+        height: 231px;
+    }
+    
+}

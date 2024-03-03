@@ -351,3 +351,72 @@ Grandes telas: acima 12000px
     }
 }
 
+@media screen and (max-width: 280px) {
+    .form-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        margin-top: -5rem;
+    }
+
+    .title2{
+        margin-top: -1rem;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .form-image{
+        display: none;
+    }
+
+    .form-header img{
+        margin-top: 5rem;
+        height: 100px;
+        object-fit: contain;
+        aspect-ratio: 2/1;
+    }
+
+    .bvf{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .btnGoogle{
+        color: black;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+    }
+
+    .btnGoogle:hover{
+        background-color: #7AC143;
+        border: 2px rgba(0, 0, 0, 0.705) solid;
+        border-radius: 50px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.226);
+    }
+
+    .loginGoogle img{
+        height: 20px;
+    }
+
+    .lbl{
+        font-size: 15px;
+    }
+
+    .input {
+        width: 150px;;
+      }
+
+    .footer p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+

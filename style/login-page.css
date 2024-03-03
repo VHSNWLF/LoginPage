@@ -149,10 +149,26 @@ body{
     font-size: 20px;
 }
 
+.folha1{
+  position: fixed;
+  left: 48.5%;
+  bottom: 0%;
+}
+
+.folha2{
+  position: fixed;
+  right: 0%;
+  top: 0%;
+}
+
 /*--------------------*/
 
 #icon{
     height: 20px;
+}
+
+#icon2{
+  height: 85px;
 }
 
 .InputContainer {

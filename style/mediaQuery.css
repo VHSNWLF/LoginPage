@@ -83,6 +83,10 @@ Grandes telas: acima 12000px
 }
 
 @media screen and (max-width: 1200px){
+    #icon2{
+        height: 80px;
+    }
+    
     .container{
         height: 100vh;
     }
@@ -155,6 +159,10 @@ Grandes telas: acima 12000px
 }
 
 @media screen and (max-width: 992px){
+    #icon2{
+        height: 70px;
+    }
+    
     .container{
         height: 100vh;
     }
@@ -349,9 +357,17 @@ Grandes telas: acima 12000px
         display: block;
         margin-top: 1rem;
     }
+
+    .folha1{
+        display: none;  
+      }
+  
+      .folha2{
+          display: none;
+      }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 281px) {
     .form-header{
         display: flex;
         flex-direction: column;
@@ -417,6 +433,14 @@ Grandes telas: acima 12000px
     .footer p{
         font-size: 20px;
         text-align: center;
+    }
+
+    .folha1{
+      display: none;  
+    }
+
+    .folha2{
+        display: none;
     }
 }
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+
 *{
     padding: 0;
     margin: 0;
@@ -45,10 +47,6 @@ body{
 }
 
 
-.form-header{
-    display: flex;
-}
-
 .loginGoogle{
     border: 1px rgba(0, 0, 0, 0.425) solid;
     border-radius: 50px;
@@ -93,6 +91,7 @@ body{
 }
 
 .form-header{
+    display: flex;
     margin-top: -15rem;
     margin-bottom: 4rem;
 }

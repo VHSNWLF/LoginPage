@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/*Todas as medias querys virão aqui*/
+
+/* Typical devices breakpoints
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 769px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima 12000px
+*/
+
+@media screen and (max-width: 1540px) {
+
+.container{
+    height: 100vh;
+}
+
+#bv{
+    color: aliceblue;
+    margin-top: 80px;
+    font-size: 45px;
+    text-shadow: 3px 2px 2px #7AC143;
+}
+#bv2{
+    color: aliceblue;
+    font-size: 45px;
+    text-shadow: 3px 2px 2px #7AC143;
+}
+
+#ip{
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.form-header{
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.title2{
+    font-size: 35px;
+    margin-top: -3.3rem;
+}
+
+.btnGoogle{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btnGoogle:hover{
+    background-color: #7AC143;
+    border: 2px rgba(0, 0, 0, 0.705) solid;
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.226);
+}
+
+.loginGoogle img{
+    height: 20px;
+}
+
+.lbl{
+    font-size: 20px;
+}
+
+.input {
+    width: 400px;;
+  }
+
+.logo img{
+    height: 150px;
+}
+
+.header{
+    margin-top: -3.3rem;
+}
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        height: 100vh;
+    }
+
+    #bv{
+        color: aliceblue;
+        margin-top: 80px;
+        font-size: 45px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+    #bv2{
+        color: aliceblue;
+        font-size: 45px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+    
+    #ip{
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .form-header{
+        margin-top: -2;
+        margin-bottom: 1rem;
+    }
+
+    .title2{
+        font-size: 35px;
+        margin-top: 1rem;
+    }
+
+    .btnGoogle{
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btnGoogle:hover{
+        background-color: #7AC143;
+        border: 2px rgba(0, 0, 0, 0.705) solid;
+        border-radius: 50px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.226);
+    }
+    
+    .loginGoogle img{
+        height: 20px;
+    }
+
+    .lbl{
+        font-size: 20px;
+    }
+
+    .input {
+        width: 400px;;
+      }
+
+    .logo img{
+        height: 150px;
+    }
+
+    .header{
+        margin-top: -2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        height: 100vh;
+    }
+    #ip{
+        height: 300px;
+        margin-top: 1.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .form-header{
+        margin-top: -2;
+        margin-bottom: 1rem;
+    }
+
+    #bv{
+        color: aliceblue;
+        margin-top: 80px;
+        font-size: 35px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+    #bv2{
+        color: aliceblue;
+        font-size: 35px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+
+    .title2{
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
+
+    .btnGoogle{
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btnGoogle:hover{
+        background-color: #7AC143;
+        border: 2px rgba(0, 0, 0, 0.705) solid;
+        border-radius: 50px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.226);
+    }
+    
+    .loginGoogle img{
+        height: 20px;
+    }
+
+    .lbl{
+        font-size: 20px;
+    }
+
+    .input {
+        width: 250px;;
+      }
+
+      .logo img{
+        height: 140px;
+    }
+
+    .header{
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        height: 100vh;
+    }
+    #ip{
+        margin-top: 3.8rem;
+        height: 240px;
+    }
+
+    .form-header{
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+
+    .header{
+        margin-top: -2rem;
+    }
+
+    #bv{
+        color: aliceblue;
+        margin-top: 80px;
+        font-size: 35px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+    #bv2{
+        color: aliceblue;
+        font-size: 35px;
+        text-shadow: 3px 2px 2px #7AC143;
+    }
+
+    .title2{
+        font-size: 25px;
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
+
+    .btnGoogle{
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btnGoogle:hover{
+        background-color: #7AC143;
+        border: 2px rgba(0, 0, 0, 0.705) solid;
+        border-radius: 50px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.226);
+    }
+    
+    .loginGoogle img{
+        height: 15px;
+    }
+
+    .lbl{
+        font-size: 20px;
+    }
+
+    .input {
+        width: 200px;;
+      }
+
+      .logo img{
+        height: 140px;
+    }
+}

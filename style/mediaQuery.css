@@ -392,7 +392,7 @@ Grandes telas: acima 12000px
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 280px;
+        width: 260px;
     }
 
     .btnGoogle:hover{

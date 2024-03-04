@@ -184,6 +184,16 @@ Grandes telas: acima 12000px
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .folha1{
+        left: 42.7%;
+    }
+    .logo img{
+        height: 108px;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 992px){
     #icon2{
         height: 70px;
@@ -268,6 +278,14 @@ Grandes telas: acima 12000px
         align-items: center;
     }
 }
+
+@media screen and (max-width: 912px) {
+    .folha1{
+        left: 47%;
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     .container{

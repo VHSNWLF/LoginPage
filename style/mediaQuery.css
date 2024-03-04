@@ -80,6 +80,13 @@ Grandes telas: acima 12000px
 .header{
     margin-top: -3.3rem;
 }
+
+.form-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
 }
 
 @media screen and (max-width: 1200px){
@@ -155,7 +162,26 @@ Grandes telas: acima 12000px
     .header{
         margin-top: -2.5rem;
     }
+
+    .form-image{
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+    }
     
+}
+
+@media screen and (min-width: 1114) and (max-width: 1123px) {
+    .folha1{
+        left: 43%;
+    }
+}
+
+@media screen and (max-width: 1114px) {
+    .folha1{
+        left: 47.5%;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -234,6 +260,12 @@ Grandes telas: acima 12000px
 
     .header{
         margin-top: -2rem;
+    }
+    .form-image{
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
     }
 }
 
@@ -325,7 +357,7 @@ Grandes telas: acima 12000px
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .form-header{
         display: flex;
         flex-direction: column;
@@ -443,4 +475,5 @@ Grandes telas: acima 12000px
         display: none;
     }
 }
+
 

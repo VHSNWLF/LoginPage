@@ -63,6 +63,10 @@ body{
     gap: 2rem;
 }
 
+.btnGoogle:active {
+  scale: 1;
+}
+
 .btnGoogle:hover{
     background-color: #7AC143;
     border: 2px rgba(0, 0, 0, 0.705) solid;
@@ -143,6 +147,7 @@ body{
 
 .footer a{
     color: #7AC143;
+    text-decoration: none;
 }
 
 .footer p{
@@ -287,5 +292,46 @@ body{
     scale: 1;
   }
   
+
+
+  #b2 {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #7AC143;
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+  }
+  
+  .buton svg {
+    height: 24px;
+  }
+  
+  #b2:hover {
+    background-color: #7AC143;
+    transform: scale(1.02);
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+
+  #b2:hover::before{
+    scale: 3;
+  }
+
+  #b2:active{
+    scale: 1;
+  }
   
   

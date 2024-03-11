@@ -1,12 +1,49 @@
+<?php
+ session_start();
+
+require 'database/config.php';
+
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
+    $email = $_POST['email_username'];
+    $password = $_POST['password'];
+}
+
+    $sql = "SELECT * FROM cl202247.EcoMomentBD_UsuarioWeb WHERE NomeWeb = ? AND SenhaWeb = ?";  //Verificar se o utilizador existe
+
+    $stmt = $con->prepare($sql);
+    $stmt->bind_param('ss',$email, $password);  // Bind the parameters with variable
+    $stmt->execute();   // Execute the prepared statement
+
+    $result = $stmt->get_result();
+
+    if($result->num_rows === 1){
+        $row = $result->fetch_assoc();
+
+        if (password_verify( $password , $row["SenhaWeb"])) {
+            $_SESSION["loggedin"] = true;
+            echo  "<script>alert('Logado com sucesso')</script>";
+            header('Location: logado.php');
+            exit;
+    }
+}
+else{
+    $error = 'Usuario ou senha incorretos';
+    echo  "<script>alert('".$error."')</script>";
+} 
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style/login-page.css">
+    <link rel="stylesheet" href="styleLogin/login-page.css">
     <link rel="stylesheet" href="https://use.typekit.net/xhc2seb.css">
-    <link rel="stylesheet" href="style/mediaQuery.css">
+    <link rel="stylesheet" href="styleLogin/mediaQuery.css">
 
 
     <style>
@@ -77,7 +114,7 @@
 
                     <p id="or" class="circeB">ou</p>
 
-                <form action="#">
+                <form action="loginPage.php" method="post">
                     <div class="input-group">
                         <div class="input-box">
                             <label class="lbl circeB" for="email_username">E-mail / nome de usuário:</label>
@@ -85,7 +122,7 @@
                                 <label for="email_username" class="labelforsearch">
                                     <img id="icon" src="midias/email.png" alt="">
                                 </label>
-                                <input type="text" name="email_username" class="input" id="email_username">
+                                <input type="text" name="email_username" class="input" id="email_username" required>
                             <div class="border"></div>
                             <button class="micButton">
                                 <img id="icon" src="midias/danger.png" alt="">
@@ -99,7 +136,7 @@
                                 <label for="password" class="labelforsearch">
                                     <img id="icon" src="midias/padlock.png" alt="">
                                 </label>
-                                <input type="password" name="password" class="input" id="password">
+                                <input type="password" name="password" class="input" id="password" required>
                               <div class="border"></div>
                               <button class="micButton">
                                 <img id="icon" src="midias/danger.png" alt="">
@@ -109,7 +146,7 @@
                     </div>
 
                     <div class="btn-entrar">
-                        <button class="button">Entrar</button>
+                        <button class="button" type="submit">Entrar</button>
                     </div>
                 </form>
                 <div class="footer">

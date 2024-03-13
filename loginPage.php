@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
             exit;
     }
 }
-else{
+else if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($result->num_rows === 0)){
     $error = 'Usuario ou senha incorretos';
     echo  "<script>alert('".$error."')</script>";
 } 

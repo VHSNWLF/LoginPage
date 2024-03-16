@@ -1,35 +1,36 @@
 <?php
- session_start();
 
-require 'database/config.php';
+//  session_start();
 
-if ($_SERVER['REQUEST_METHOD'] == "POST"){
-    $email = $_POST['email_username'];
-    $password = $_POST['password'];
-}
+// require 'database/config.php';
 
-    $sql = "SELECT * FROM cl202247.EcoMomentBD_UsuarioWeb WHERE NomeWeb = ? AND SenhaWeb = ?";  //Verificar se o utilizador existe
+// if ($_SERVER['REQUEST_METHOD'] == "POST"){
+//     $email = $_POST['email_username'];
+//     $password = $_POST['password'];
+// }
 
-    $stmt = $con->prepare($sql);
-    $stmt->bind_param('ss',$email, $password);  // Bind the parameters with variable
-    $stmt->execute();   // Execute the prepared statement
+//     $sql = "SELECT * FROM cl202247.EcoMomentBD_UsuarioWeb WHERE NomeWeb = ? AND SenhaWeb = ?";  //Verificar se o utilizador existe
 
-    $result = $stmt->get_result();
+//     $stmt = $con->prepare($sql);
+//     $stmt->bind_param('ss',$email, $password);  // Bind the parameters with variable
+//     $stmt->execute();   // Execute the prepared statement
 
-    if($result->num_rows === 1){
-        $row = $result->fetch_assoc();
+//     $result = $stmt->get_result();
 
-        if (password_verify( $password , $row["SenhaWeb"])) {
-            $_SESSION["loggedin"] = true;
-            echo  "<script>alert('Logado com sucesso')</script>";
-            header('Location: logado.php');
-            exit;
-    }
-}
-else if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($result->num_rows === 0)){
-    $error = 'Usuario ou senha incorretos';
-    echo  "<script>alert('".$error."')</script>";
-} 
+//     if($result->num_rows === 1){
+//         $row = $result->fetch_assoc();
+
+//         if (password_verify( $password , $row["SenhaWeb"])) {
+//             $_SESSION["loggedin"] = true;
+//             echo  "<script>alert('Logado com sucesso')</script>";
+//             header('Location: logado.php');
+//             exit;
+//     }
+// }
+// else if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($result->num_rows === 0)){
+//     $error = 'Usuario ou senha incorretos';
+//     echo  "<script>alert('".$error."')</script>";
+// } 
 
 
 
@@ -114,7 +115,7 @@ else if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($result->num_rows === 0)){
 
                     <p id="or" class="circeB">ou</p>
 
-                <form action="loginPage.php" method="post">
+                <form action="testLogin.php" method="POST">
                     <div class="input-group">
                         <div class="input-box">
                             <label class="lbl circeB" for="email_username">E-mail / nome de usuário:</label>
